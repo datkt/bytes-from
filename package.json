@@ -1,0 +1,33 @@
+{
+  "name": "@datkt/bytes-from",
+  "version": "0.0.1",
+  "description": "Convert various arguments into a ByteArray",
+  "main": "index.kt",
+  "scripts": {
+    "postinstall": "konanc index.kt -p library -o bytes-from",
+    "test": "konanc index.kt test.kt $(konanc-config -clr konanc.kc) -p program -o test.kexe && ./test.kexe"
+  },
+  "keywords": [
+    "datkt",
+    "bytes",
+    "convert",
+    "from",
+    "vararg",
+    "variadic",
+    "arguments"
+  ],
+  "author": "Joseph Werle <werle@littlstar.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@datkt/tape": "^0.6.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datkt/bytes-from.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datkt/bytes-from/issues"
+  },
+  "homepage": "https://github.com/datkt/bytes-from#readme"
+}
