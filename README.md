@@ -27,7 +27,7 @@ fun main(args: Array<String>) {
 
 ### `bytesFrom(vararg bytes: Number): ByteArray`
 
-Converts a variadic array of 'Number' to a 'ByteArray'
+Converts a variadic array of `Number` to a `ByteArray`
 
 ```kotlin
 val bytes = bytesFrom(0xfe, 0xed, 0xbe, 0xef)
@@ -39,7 +39,7 @@ val bytes = bytesFrom(*arrayOf(0xfe, 0xed, 0xbe, 0xef))
 
 ### `bytesFrom(bytes: ByteArray): ByteArray`
 
-Converts a 'ByteArray' to a new 'ByteArray'
+Converts a `ByteArray` to a new `ByteArray`
 
 ```kotlin
 val bytes = bytesFrom(bytesFrom(0xfe, 0xed, 0xbe, 0xef))
@@ -47,7 +47,7 @@ val bytes = bytesFrom(bytesFrom(0xfe, 0xed, 0xbe, 0xef))
 
 ### `bytesFrom(bytes: Array<out Number>): ByteArray`
 
-Converts an 'Array' of 'Number' to a 'ByteArray'
+Converts an `Array` of `Number` to a `ByteArray`
 
 ```kotlin
 val bytes = bytesFrom(arrayOf(0xfe, 0xed, 0xbe, 0xef))
@@ -55,7 +55,7 @@ val bytes = bytesFrom(arrayOf(0xfe, 0xed, 0xbe, 0xef))
 
 ### `bytesFrom(bytes: String): ByteArray`
 
-Converts a 'String' to a 'ByteArray'
+Converts a `String` to a `ByteArray`
 
 ```kotlin
 val bytes = bytesFrom("feedbeef")
@@ -63,7 +63,7 @@ val bytes = bytesFrom("feedbeef")
 
 ### `bytesFrom(size: Number): ByteArray`
 
-Converts a 'Number' to a 'ByteArray'
+Converts a `Number` to a `ByteArray`
 
 ```kotlin
 val bytes = bytesFrom(16)
@@ -71,7 +71,7 @@ val bytes = bytesFrom(16)
 
 ### `bytesFrom(size: Char): ByteArray`
 
-Converts a 'Char' to a 'ByteArray'
+Converts a `Char` to a `ByteArray`
 
 ```kotlin
 val bytes = bytesFrom('a')
@@ -79,7 +79,11 @@ val bytes = bytesFrom('a')
 
 ### `bytesFrom(bytes: Any? = null): ByteArray`
 
-Converts an 'Any?' to an empty 'ByteArray'
+Converts an `Any?` to an empty `ByteArray`
+
+```kotlin
+val bytes = bytesFrom()
+```
 
 ```kotlin
 val bytes = bytesFrom(null)
