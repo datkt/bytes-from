@@ -87,6 +87,7 @@ fun main(args: Array<String>) {
   }
 
   test("bytesFrom(bytes: Any? = null): ByteArray") { t ->
+    t.equal(bytesFrom().size, 0)
     t.equal(bytesFrom(null).size, 0)
     t.equal(bytesFrom("").size, 0)
     t.equal(bytesFrom(fun() { }).size, 0)
