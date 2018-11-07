@@ -107,4 +107,9 @@ val bytes = bytesFrom(true)
 * https://github.com/datkt/bytes
 * https://github.com/LinusU/buffer-from#readme
 
+## License
+
+MIT
+
+
 [datkt-bytes]: https://github.com/datkt/bytes
