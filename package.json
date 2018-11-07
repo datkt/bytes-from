@@ -4,8 +4,9 @@
   "description": "Convert various arguments into a ByteArray",
   "main": "index.kt",
   "scripts": {
-    "postinstall": "konanc index.kt -p library -o bytes-from",
-    "test": "konanc index.kt test.kt $(konanc-config -clr test.kc) -p program -o test.kexe && ./test.kexe"
+    "postinstall": "npm run build",
+    "build": "konanc index.kt $(konanc-config -clr lib.kc) -p library -o bytes-from",
+    "test": "konanc test.kt $(konanc-config -clr . test.kc) -p program -o test.kexe && ./test.kexe"
   },
   "keywords": [
     "datkt",
