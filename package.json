@@ -1,6 +1,6 @@
 {
   "name": "@datkt/bytes-from",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert various arguments into a ByteArray",
   "main": "index.kt",
   "scripts": {
