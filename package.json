@@ -5,7 +5,7 @@
   "main": "index.kt",
   "scripts": {
     "postinstall": "konanc index.kt -p library -o bytes-from",
-    "test": "konanc index.kt test.kt $(konanc-config -clr konanc.kc) -p program -o test.kexe && ./test.kexe"
+    "test": "konanc index.kt test.kt $(konanc-config -clr test.kc) -p program -o test.kexe && ./test.kexe"
   },
   "keywords": [
     "datkt",
