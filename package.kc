@@ -1,2 +1,2 @@
-repo = "@datkt/bytes-from"
+require = "./lib"
 library = "bytes-from"
